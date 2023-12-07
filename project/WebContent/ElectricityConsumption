@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electricity Consumption Analysis</title>
+<style>
+body {
+            font-family: 'Arial', sans-serif;
+            background-color: #E0F2F1;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+            color: #009688;
+        }
+        form {
+            padding: 20px;
+            width: 300px;
+            margin: 30px auto;
+            border-radius: 8px;
+            background-color: #E0F2F1;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #00695C;
+        }
+        input[type="text"], input[type="file"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #00695C;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #00796B;
+        }
+</style>
+  
+</head>
+<body>
+
+<div class="header">
+  <h1>MBIP Project</h1>
+  
+  <h2>Electricity Consumption Analysis</h2>
+</div>
+
+<div class="form-container">
+  <form id="dataForm">
+    <label for="location">Location</label>
+    <input type="text" id="location" name="location">
+    <br>
+    <label for="sectorCode">Sector Code</label>
+    <input type="text" id="sectorCode" name="sectorCode">
+	<br>
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date">
+     <br>
+    <label for="timeRange">Time Range</label>
+    <input type="text" id="timeRange" name="timeRange">
+    <br>
+    <label for="requestDetails">Request Details</label>
+    <textarea id="requestDetails" name="requestDetails"></textarea>
+    <br>
+    <button type="submit">Get Analysis</button>
+  </form>
+</div>
+
+</body>
+</html>
