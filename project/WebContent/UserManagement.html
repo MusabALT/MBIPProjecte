@@ -4,70 +4,48 @@
     <meta charset="UTF-8">
     <title>User Management</title>
     <style>
-        /* Apply the provided styles */
+        /* Apply the styling from the Recycle Activity Form to User Registration */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            background-color: #E0F2F1;
             margin: 0;
             padding: 0;
         }
-        .header {
-            background-color: #009688;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
+        h2 {
+            text-align: center; /* Center the headers */
+            color: #009688;
         }
-        .menu {
-            display: flex;
-            flex-direction: column;
+        form {
             padding: 20px;
-        }
-        .menu-item {
-            background-color: #004D40;
-            color: white;
-            padding: 10px;
-            margin-bottom: 10px;
-            text-align: center;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .menu-item:hover {
-            background-color: #00796B;
-        }
-        /* Additional styles for User Management */
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-        section {
-            background-color: #004D40;
-            color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
             width: 70%;
-            max-width: 300px;
+            max-width: 400px;
+            margin: 30px auto;
+            border-radius: 8px;
+            background-color: #E0F2F1;
         }
-        section:hover {
-            background-color: #00796B;
-        }
-        button {
+        label {
             display: block;
-            margin: 10px auto;
-            padding: 10px 20px;
+            margin: 10px 0;
+            color: #00695C;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin: 5px 0;
             border: none;
             border-radius: 4px;
-            background-color: #004D40;
-            color: white;
-            cursor: pointer;
         }
-        button:hover {
+        button[type="submit"] {
+            background-color: #00695C;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button[type="submit"]:hover {
             background-color: #00796B;
         }
     </style>
@@ -84,26 +62,18 @@
         <form>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            
             <label for="phoneNumber">Phone Number:</label>
             <input type="text" id="phoneNumber" name="phoneNumber">
+            
             <label for="location">Location:</label>
             <input type="text" id="location" name="location">
+            
             <button type="submit">Register</button>
         </form>
-    </section>
-
-    <section class="profile-management">
-        <h2>Profile Management</h2>
-        <button>Edit Profile</button>
-        <button>Change Password</button>
-    </section>
-
-    <section class="authentication">
-        <h2>User Authentication</h2>
-        <button>Login</button>
-        <button>Forgot Password</button>
     </section>
 </main>
 
