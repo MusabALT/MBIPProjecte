@@ -6,53 +6,55 @@
 <title>Water Consumption Analysis</title>
 <style>
   body {
-    font-family: 'Arial', sans-serif;
-    background-color: #E0F2F1;
-    margin: 0;
-    padding: 0;
-  }
-  .header {
-    background-color: #009688;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-  }
-  .form-container {
-    background-color: #B2DFDB;
-    padding: 20px;
-    width: 400px;
-    margin: 30px auto;
-    border-radius: 8px;
-  }
-  input[type="text"], input[type="date"], input[type="time"], textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 4px;
-  }
-  .button {
-    background-color: #00695C;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-  }
-  .button:hover {
-    background-color: #00796B;
-  }
+            font-family: 'Arial', sans-serif;
+            background-color: #E0F2F1;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+            color: #009688;
+        }
+        form {
+            padding: 20px;
+            width: 300px;
+            margin: 30px auto;
+            border-radius: 8px;
+            background-color: #E0F2F1;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #00695C;
+        }
+        input[type="text"], input[type="file"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #00695C;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #00796B;
+        }
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>MBIP Project</h1>
-</div>
+
+ <h2>Water Consumption Analysis</h2>
 
 <div class="form-container">
-  <h2>Water Consumption Analysis</h2>
+ 
   <form action="GetwaterAnalysis.html" method="get">
   <input type="text" id="location" name="location" placeholder="Location">
   <input type="text" id="code" name="code" placeholder="Sector Code">
