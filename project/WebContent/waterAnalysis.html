@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Consumption Analysis</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E0F2F1;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    background-color: #009688;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .form-container {
+    background-color: #B2DFDB;
+    padding: 20px;
+    width: 400px;
+    margin: 30px auto;
+    border-radius: 8px;
+  }
+  input[type="text"], input[type="date"], input[type="time"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+  }
+  .button {
+    background-color: #00695C;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .button:hover {
+    background-color: #00796B;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>MBIP Project</h1>
+</div>
+
+<div class="form-container">
+  <h2>Water Consumption Analysis</h2>
+  <form action="GetwaterAnalysis.html" method="get">
+  <input type="text" id="location" name="location" placeholder="Location">
+  <input type="text" id="code" name="code" placeholder="Sector Code">
+  <input type="date" id="location" name="date" placeholder="date">
+  <input type="text" id="Range" name="Range" placeholder="Time Range">
+
+  <textarea id="Notes" name="Notes" placeholder="Request Details"></textarea>
+  <button type="submit" class="button">Get Analysis</button>
+</form>
+
+</div>
+
+<div class="header">
+  <h1><a href="index.html">MBIP Project</a></h1>
+</div>
+
+</body>
+</html>
