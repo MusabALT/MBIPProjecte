@@ -61,23 +61,23 @@ body {
 </div>
 
 <div class="form-container">
-  <form id="dataForm">
-    <label for="location">Location</label>
-    <input type="text" id="location" name="location">
-    <br>
-    <label for="sectorCode">Sector Code</label>
-    <input type="text" id="sectorCode" name="sectorCode">
-	<br>
-    <label for="date">Date</label>
-    <input type="date" id="date" name="date">
-     <br>
-    <label for="timeRange">Time Range</label>
-    <input type="text" id="timeRange" name="timeRange">
-    <br>
-    <label for="requestDetails">Request Details</label>
-    <textarea id="requestDetails" name="requestDetails"></textarea>
-    <br>
-    <button type="submit">Get Analysis</button>
+  <form action="Getresults.html"  method="get">
+    <label for="month">Month :</label>
+    <input type="month" id="month" name="month" >
+  
+    <label for="day">No. of days :</label>
+    <input type="number" id="day" name="day" >
+  
+    <label for="electric">Electricity consumption value (kWh) :</label>
+    <input type="text" id="electric" name="electric">
+  
+    <label for="electricRM">Electricity consumption value (RM) :</label>
+    <input type="text" id="electricRM" name="electricRM">
+  
+    <label for="factor">Prorate factor :</label>
+    <input type="text" id="factor" name="factor">
+  
+    <button type="submit" class="button">Get Analysis</button>
   </form>
 </div>
 
